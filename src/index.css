@@ -9,7 +9,7 @@
   --grayish-blue: hsl(220, 14%, 75%);
   --light-grayish-blue: hsl(223, 64%, 98%);
   --white: hsl(0, 0%, 100%);
-  --lightbox-black: hsl(0, 0%, 0%);
+  --lightbox-black: hsla(0, 0%, 0%, 75%);
 }
 
 body {
@@ -23,8 +23,9 @@ body {
   opacity: 0.5;
 }
 
-img[alt='product thumbnail']:hover {
+.product-thumbnail:hover {
   background-color: var(--pale-orange);
+  opacity: 0.5;
 }
 
 .hide {

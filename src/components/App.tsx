@@ -2,7 +2,6 @@ import Header from './header'
 import Product from './product'
 import Description from './description'
 import Pricing from './pricing'
-import Preview from './preview'
 import Cart from './cart'
 import { useState } from 'react'
 
@@ -28,7 +27,6 @@ function App() {
       <section className="container md:flex md:flex-row md:gap-20 md:p-4">
         <div className="md:w-2/5 w-full">
           <Product />
-          <Preview />
         </div>
         <div className="md:w-3/5 w-full">
           <Description />
