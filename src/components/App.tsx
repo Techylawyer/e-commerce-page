@@ -11,14 +11,15 @@ function App() {
   const [cartItems, setCartItems] = useState(0)
 
   const handleAddToCart = () => {
-    if (quantity > 0) { 
-    setCartItems((prev) => prev + quantity)
-    setQuantity(0)
+    if (quantity > 0) {
+      setCartItems((prev) => prev + quantity)
+      setQuantity(0)
     }
   }
   return (
-    <main className="max-w-md md:max-w-4xl mx-auto w-screen overflow-x-clip">
+    <main className="max-w-md md:max-w-4xl mx-auto w-full relative">
       <Header cartItems={cartItems} />
+      <Cart cartItems={cartItems} setCartItems={setCartItems} />
 
       <hr className="hidden md:block text-(--light-grayish-blue) mb-12 -mt-5" />
 
@@ -36,7 +37,6 @@ function App() {
           />
         </div>
       </section>
-      <Cart cartItems={cartItems} setCartItems={setCartItems} />
     </main>
   )
 }

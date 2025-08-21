@@ -4,7 +4,7 @@ function Product() {
       <img
         src="images/image-product-1.jpg"
         alt="product image"
-        className="w-full h-auto md:w-full md:h-full md:rounded-lg"
+        className="w-screen md:w-full md:h-full md:rounded-lg"
       />
 
       <button className="absolute top-1/2 left-4 -translate-y-1/2 bg-(--white) rounded-full p-2 shadow md:hidden">

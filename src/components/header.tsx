@@ -1,4 +1,6 @@
 function Header({ cartItems }: { cartItems: number }) {
+
+  
   const handleShowCart = () => {
     const cart = document.querySelector('#cart')
     if (cart) {
@@ -57,7 +59,7 @@ function Header({ cartItems }: { cartItems: number }) {
       <div className="flex items-center">
         <button onClick={handleShowCart}>
           {cartItems > 0 ? (
-            <div className="bg-(--orange) w-4 h-4 text-(--white) text-xs rounded-full absolute">
+            <div className="bg-(--orange) w-4 h-4 text-(--white) text-xs rounded-md absolute ml-2 -mt-2">
               {cartItems}
             </div>
           ) : (
