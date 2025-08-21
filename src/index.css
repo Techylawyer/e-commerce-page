@@ -24,7 +24,7 @@ body {
 }
 
 img[alt='product thumbnail']:hover {
-  opacity: 0.5;
+  background-color: var(--pale-orange);
 }
 
 .hide {
