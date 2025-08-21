@@ -6,6 +6,7 @@ import Preview from './preview'
 import Cart from './cart'
 import { useState } from 'react'
 
+
 function App() {
   const [quantity, setQuantity] = useState(0)
   const [cartItems, setCartItems] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       setQuantity(0)
     }
   }
+
   return (
     <main className="max-w-md md:max-w-4xl mx-auto w-full relative">
       <Header cartItems={cartItems} />
